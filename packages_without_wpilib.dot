@@ -1,0 +1,33 @@
+digraph "packages_No_Name" {
+charset="utf-8"
+rankdir=BT
+"0" [label="commands", shape="box"];
+"1" [label="commands.drive_straight", shape="box"];
+"2" [label="commands.lift_go_to_level", shape="box"];
+"3" [label="commands.mast_back", shape="box"];
+"4" [label="commands.mast_forward", shape="box"];
+"5" [label="commands.mecanum_drive_with_joystick", shape="box"];
+"6" [label="commands.open_grabba", shape="box"];
+"7" [label="commands.set_grabba_setpoint", shape="box"];
+"8" [label="commands.set_lift_setpoint", shape="box"];
+"9" [label="commands.set_mast_setpoint", shape="box"];
+"10" [label="robot", shape="box"];
+"11" [label="subsystems", shape="box"];
+"12" [label="subsystems.camera", shape="box"];
+"13" [label="subsystems.derailer", shape="box"];
+"14" [label="subsystems.drivetrain", shape="box"];
+"15" [label="subsystems.grabber", shape="box"];
+"16" [label="subsystems.lift", shape="box"];
+"17" [label="subsystems.mast", shape="box"];
+"2" -> "8" [arrowhead="open", arrowtail="none"];
+"3" -> "9" [arrowhead="open", arrowtail="none"];
+"4" -> "9" [arrowhead="open", arrowtail="none"];
+"6" -> "7" [arrowhead="open", arrowtail="none"];
+"10" -> "12" [arrowhead="open", arrowtail="none"];
+"10" -> "13" [arrowhead="open", arrowtail="none"];
+"10" -> "14" [arrowhead="open", arrowtail="none"];
+"10" -> "15" [arrowhead="open", arrowtail="none"];
+"10" -> "16" [arrowhead="open", arrowtail="none"];
+"10" -> "17" [arrowhead="open", arrowtail="none"];
+"14" -> "5" [arrowhead="open", arrowtail="none"];
+}
